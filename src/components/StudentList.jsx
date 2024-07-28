@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 
 import './studentlist.css'
-import StudentTable from './StudentTable'
+import{ StudentTable} from './StudentTable'
 
-const StudentList = ({student}) => {
+const StudentList = ({students ,setStudents}) => {
 
 
   
@@ -11,7 +11,7 @@ const StudentList = ({student}) => {
   return (
       
     <div>
-      <StudentTable  StudentList={student}  />
+      <StudentTable  students={students}  setStudents={setStudents}   />
     </div>
      
   )

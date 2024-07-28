@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <StudentForm  fetchStudents={fetchStudents} />
-      <StudentList student={students}  />
+      <StudentList students={students}  setStudents={setStudents} />
     </>
   )
 }
